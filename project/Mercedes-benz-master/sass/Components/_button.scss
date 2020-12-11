@@ -1,0 +1,17 @@
+// button
+.btn-black{
+    @include styleButton($color-black-0, $color-white-0, $pd-1, $pd-1 + 5);
+    @include typeText($fs-0, $color-white-0, $fw-bold-1);
+    &:hover{
+        @include styleHoverBtn($color-blue, $color-white-0, $color-white-0 );
+    }
+}
+
+.btn-blue{
+    @include styleButton($color-blue, $color-gray-4, $pd-1, $pd-1 + 5);
+    @include typeText($fs-0, $color-gray-4, $fw-bold-1);
+    &:hover{
+        @include styleHoverBtn($color-white-0, $color-black-0, $color-black-0);
+    }
+
+}

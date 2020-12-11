@@ -1,0 +1,54 @@
+// style text
+@mixin typeText($fs, $color, $fw) {
+    font-size: $fs;
+    color: $color;
+    font-weight: $fw;
+}
+
+// style button
+@mixin styleButton($bg-color, $border, $py, $px) {
+    background-color: $bg-color;
+    border: 1px solid $border;
+    padding: $py $px;
+    border-radius: $border-radius;
+    // cach 1
+    // &:hover{
+
+    // }
+}
+
+// cach 2: tạo 1 mixin riêng cho việc hover
+@mixin styleHoverBtn($bg-hover, $border-hover, $color) {
+    background-color: $bg-hover;
+    border-color: $border-hover;
+    color: $color;
+}
+
+//mixin Icon hover
+@mixin styleIconHover($bg-hover, $border-hover, $color) {
+    background-color: $bg-hover;
+    border-color: $border-hover;
+    color: $color;
+    
+}
+
+
+// Mixin giúp lấy ra nhiều giá trị trong 1 mảng
+// Reponsive
+// $screen : chứa tên của màn hình
+@mixin reponsive($screen) {
+    @if (map-has-key($map:$breakpoints, $key:$screen)) {
+        // Nếu tìm thấy màn hình
+        $value:map-get($map:$breakpoints, $key:$screen);
+        @media screen and (max-width:$value) {
+            // @content này giúp tất cả các code điền vào sẽ được ghi vào đây
+            @content;
+        }
+
+
+    } @else {
+        @warn "Screen notfound";
+    }
+}
+
+

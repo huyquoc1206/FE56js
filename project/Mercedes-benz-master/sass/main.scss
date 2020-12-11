@@ -1,0 +1,30 @@
+//không chứa code css, chỉ chứa đường dẫn tới các file con
+
+//Helper
+@import './Helper/variables';
+@import './Helper/mixin';
+
+//Vendor
+
+//Base
+@import './Base/reset';
+// chứa 
+@import './Base/customize';
+
+//Components
+// component có thể đổi thứ tự cho layout
+@import './Components/button';
+@import './Components/icon';
+
+//Layout
+@import './Layouts/header';
+
+//Page
+// chứa các thành phần riêng của mỗi phần trang web
+
+
+
+// Theme
+
+// Vendor
+// đè code
