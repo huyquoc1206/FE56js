@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  /* background: #29303b; */
+  color: #fff;
+  text-align: left;
+  font-size: 15px;
+  color: #29303b;
+  font-weight: normal;
+}
+
+.btn-black {
+  background-color: #29303b;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  border-radius: 2px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.btn-black:hover {
+  background-color: #00adef;
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-blue {
+  background-color: #00adef;
+  border: 1px solid #686f7a;
+  padding: 10px 15px;
+  border-radius: 2px;
+  font-size: 15px;
+  color: #686f7a;
+  font-weight: 700;
+}
+
+.btn-blue:hover {
+  background-color: #fff;
+  border-color: #29303b;
+  color: #29303b;
+}
+/*# sourceMappingURL=main.css.map */
+/* brandhub */
+
+
+brandhub{
+clear: both;
+margin-top: 100px;
+position: fixed;
+bottom: 0;
+max-width: 100%;
+width: 100%;
+height: 350px;
+color: white;
+display: flex;
+
+}
+.brandhub__end{
+  max-width: 100%;
+  width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+  
+}
